@@ -61,7 +61,8 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-
+holiday_hash.each do |seasons|
+  puts "#{seasons.to_s.capitalize}:"
 end
 
 def all_holidays_with_bbq(holiday_hash)
@@ -87,6 +88,4 @@ holiday_supplies =
    }
  }
 
- columbus_day_supplies = ["Flags", "Parade Floats", "Italian Food"]
-
-add_new_holiday_with_supplies(holiday_supplies, :fall, :columbus_day, columbus_day_supplies)
+ all_supplies_in_holidays(holiday_supplies)
