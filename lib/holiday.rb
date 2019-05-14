@@ -41,20 +41,12 @@ end
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
   # code here
   # remember to return the updated hash
-i=0
-supply_array.each do |x|
-holiday_hash[:season][:holiday_name][i] = x
-i +=1
-end
-holiday_hash
+
 end
 
 def all_winter_holiday_supplies(holiday_hash)
   # return an array of all of the supplies that are used in the winter season
-return_array = Array.new
-holiday_hash[:winter].each do |key, value|
-  return_array << value
-end
+
 end
 
 def all_supplies_in_holidays(holiday_hash)
