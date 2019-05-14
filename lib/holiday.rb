@@ -80,7 +80,8 @@ holiday_hash.each do |season, holiday|
       return_array << holiday.keys
   end
 end
-
+end
+return_array
 end
 
 holiday_supplies =
