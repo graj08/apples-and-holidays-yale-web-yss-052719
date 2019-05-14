@@ -47,6 +47,7 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
   puts holiday_name
   i=0
 supply_array.each do |item|
+  binding.pry
   holiday_hash[season][holiday_name][i] = item
 end
 holiday_hash
