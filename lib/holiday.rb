@@ -41,12 +41,7 @@ end
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
   # code here
   # remember to return the updated hash
-  season = season.to_s
-  puts season
-  holiday_name = holiday_name.to_s
-  puts holiday_name
-  holiday_hash[:fall][:columbus_day][0] = supply_array[0]
-  binding.pry
+  holiday_hash[season][holiday_name] = supply_array
   holiday_hash
 end
 
