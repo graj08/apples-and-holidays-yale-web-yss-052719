@@ -80,3 +80,4 @@ holiday_hash.each do |season, holiday|
   end
 end.flatten.compact
 end
+end
