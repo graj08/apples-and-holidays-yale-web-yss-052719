@@ -91,5 +91,6 @@ holiday_supplies =
    }
  }
 
+ columbus_day_supplies = ["Flags", "Parade Floats", "Italian Food"]
 
 add_new_holiday_with_supplies(holiday_supplies, :fall, :columbus_day, columbus_day_supplies)
